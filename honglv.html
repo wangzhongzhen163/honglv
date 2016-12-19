@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>红旅动漫</title>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/bootstrap/css/base.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/honglv.css"/>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.js"></script>
+</head>
+<body>
+<div class="content">
+<!--头部-->
+    <header>
+        <a href="javascript:honglvpage()" class="f_left m_l10"><span class="icon-menu icon"></span></a>
+        <p>红旅动漫</p>
+        <a href="#" class="f_right m_r10 "><span class="icon-big icon"></span></a>
+    </header>
+<!--轮播图-->
+    <div id="carousel-example-generic" class="carousel slide clearfix" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+        </ol>
+        <div class="carousel-inner" role="listbox">
+        </div>
+        <!-- Controls -->
+        <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">-->
+            <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+            <!--<span class="sr-only">Previous</span>-->
+        <!--</a>-->
+        <!--<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">-->
+            <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+            <!--<span class="sr-only">Next</span>-->
+        <!--</a>-->
+    </div>
+<!--导航-->
+    <div class="nav clearfix">
+    <ul>
+        <li><a href="javascript:nav(1)">新增连载</a></li>
+        <li><a href="javascript:nav(2)">新增完结</a></li>
+        <li><a href="javascript:nav(3)">推荐连载</a></li>
+        <li><a href="javascript:nav(4)">推荐完结</a></li>
+    </ul>
+</div>
+    <div class="w-navbar"></div>
+
+
+
+    <div class="otherpage">
+        <ul>
+            <li><a href="honglvpage1.html">连载动漫-get <span>&gt;</span></a></li>
+            <li><a href="honglvpage2.html">专题列表-get <span>&gt;</span></a></li>
+            <li><a href="">关于 <span>&gt;</span></a></li>
+        </ul>
+    </div>
+
+    <div class="totop" id="totop"><a href="#" target="_self" class="glyphicon glyphicon-arrow-up"></a></div>
+</div>
+
+
+
+
+<!--轮播图模板-->
+<script type="text/template" id="piccontrol">
+    {{each result as value i}}
+    <div class="item {{i==0?'active':''}}">
+        <a href="">  <img src="{{value.img}}" alt="...">
+            <div class="carousel-caption">
+                {{value.title}}
+            </div></a>
+    </div>
+    {{/each}}
+</script>
+<!--图标模板-->
+<script type="text/template" id="ind">
+    {{each result as value i}}
+    <li data-target="#carousel-example-generic" data-slide-to="{{i}}" class="{{i==0?'active':''}}">1</li>
+    {{/each}}
+
+</script>
+<!--产品模板-->
+<script type="text/template" id="w-nav">
+    <ul>
+        {{each result as value i}}
+        <li><a href="{{value.url}}"><img src="{{value.img}}" alt=""/><div>{{value.update}}</div><p>{{value.name}}</p></a></li>
+        {{/each}}
+    </ul>
+</script>
+
+
+<script src="lib/jquery/jquery-1.12.2.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap/js/template.js"></script>
+<script src="lib/bootstrap/js/honglv.js"></script>
+</body>
+</html>

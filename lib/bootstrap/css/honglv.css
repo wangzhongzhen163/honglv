@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'mfg_labs_iconsetregular';
+    src: url('../../../font/mfglabsiconset-webfont.eot');
+    src: url('../../../font/mfglabsiconset-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../../font/mfglabsiconset-webfont.woff') format('woff'),
+    url('../../../font/mfglabsiconset-webfont.ttf') format('truetype'),
+    url('../../../font/mfglabsiconset-webfont.svg#mfg_labs_iconsetregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon{
+    font-family: 'mfg_labs_iconsetregular';
+}
+.icon-big::before{
+    content: "\F50D";
+    font-size: 40px;
+    color: red;
+    position: absolute;
+    right: 10px;
+}
+.icon-menu::before{
+    content:"\f008";
+    font-size: 40px;
+    color: red;
+    position: absolute;
+    left: 10px;
+}
+.content{
+    width: 100%;
+    position: relative;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+header{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+header a{
+    width: 45px;
+    height: 45px;
+    display: block;
+
+}
+header p{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+}
+.carousel .carousel-indicators {
+    position: absolute;
+    /*background-color: red;*/
+    height: 20px;
+    z-index: 15;
+    width: 50px;
+    right: 0px ;
+    bottom: -5px;
+    list-style: none;
+    margin-left: -50px;
+    left: 100%;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+.carousel-indicators .active {
+    width: 8px;
+    height: 8px;
+    margin: 5px;
+    background-color: #fff;
+}
+.carousel-caption {
+    position: absolute;
+    bottom: 0px;
+    z-index: 10;
+    left: 0;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    text-align: left;
+    height: 35px;
+    line-height: 35px;
+    padding:0 0 0 8px;
+    font-size: 16px;
+}
+.carousel-caption .btn {
+    text-shadow: none;
+}
+.carousel-caption {
+    right: 0%;
+    left: 0%;
+    padding-bottom: 0px;
+}
+
+
+/*µ¼º½À¸*/
+
+.nav{
+    width: 100%;
+
+}
+.nav ul{
+    width: 100%;
+}
+.nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+}
+.nav ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-size: 20px;
+}
+
+.w-navbar{
+    width: 98%;
+    padding:5px 5px;
+    margin: 0 auto;
+}
+.w-navbar ul{
+    width: 100%;
+}
+.w-navbar li{
+    float: left;
+    box-sizing: border-box;
+    border:1px solid #ddd;
+    padding:8px 3px 5px 3px;
+    width: 50%;
+}
+.w-navbar li a{
+    display: block;
+
+    width: 100%;
+    position: relative;
+}
+.w-navbar li a img{
+    z-index: 1;
+    width: 100%;
+}
+.w-navbar li p{
+    white-space: nowrap;
+    overflow: hidden;
+    color: #ccc;
+    line-height: 20px;
+    padding-top: 20px;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 18px;
+}
+.w-navbar li div{
+    bottom: 28px;
+    position: absolute;
+    background:rgba(0,0,0,0.5);
+    width: 100%;
+    /*height: 20px;*/
+    z-index: 5;
+    color: #ccc;
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+    padding:7px 0;
+}
+
+.otherpage.on{
+    display: block;
+}
+.otherpage{
+    width: 60%;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 50px;
+    border-radius: 10px;
+    display: none;
+}
+.otherpage ul{
+    margin-bottom: 0;
+    width: 100%;
+
+}
+.otherpage ul li{
+    height: 40px;
+
+}
+.otherpage ul li a{
+    padding:0 5px;
+    width: 100%;
+    display: block;
+    height: 100%;
+    text-align: left;
+    font-size: 20px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+}
+.otherpage ul li a:last-of-type{
+    border-bottom: none;
+}
+.otherpage ul li a span{
+    float: right;
+}
+
+.totop{
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    width: 35px;
+    height: 30px;
+    background-color: #282800;
+
+}
+.totop a{
+    text-align: center;
+    font-size: 26px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+}
